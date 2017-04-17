@@ -17,7 +17,7 @@ frameLen = 25
 frameShiftMS = 10
 
 # parameter setup
-mag = mgu.specgram(audio)[3]
+mag = mgu.specgram(audio)  # y
 phase_angle = 0
 n_fft = pow(2, (math.ceil(math.log(frameLen)/math.log(2))))
 hop = frameShiftMS
